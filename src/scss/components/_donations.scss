@@ -1,0 +1,129 @@
+.donations {
+  padding: 106px 0 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__form {
+    background: linear-gradient(86.29deg, rgba(253, 212, 241, 0.25) -7.65%, rgba(209, 191, 243, 0.25) 104.16%);
+    border-radius: 4px;
+    width: 570px;
+    height: 491px;
+    padding: 50px;
+  }
+
+  &__form-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    // align-items: t;
+  }
+
+  &__form-content form {
+    width: 251px;
+  }
+
+  &__form-content form label {
+    color: #6B4185;
+    padding-left: 15px;
+    padding-right: 30px;
+  }
+
+  &__form-content form input {
+    outline: transparent;
+  }
+
+  &__input {
+    width: 100%;
+    height: 52px;
+    padding: 15px 32px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 15px 0;
+    outline: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    color: #490C3C;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+
+    &::placeholder {
+      color: #CBD0D7;
+    }
+  }
+
+  &__form-text {
+    color: #BC9ABF;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  &__counts {
+    width: 169px;
+    margin-top: 15px;
+  }
+
+  &__counts-item {
+    color: #BC9ABF;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+
+    &.active {
+      color: #6B4185;
+    }
+
+    &.active .donations__counts-arrow {
+      opacity: 1;
+    }
+  }
+
+  &__counts-arrow {
+    content: url(../../img/arrow-left.svg);
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 7px;
+    height: 11px;
+    opacity: 0;
+  }
+
+  &__info {
+    width: 575px;
+    height: 491px;
+  }
+
+  &__info-text {
+    padding-bottom: 15px;
+  }
+
+  &__info-social {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 15px 0;
+  }
+
+  &__info-links {
+    display: flex;
+    align-items: center;
+
+    & span {
+      padding: 0 15px;
+    }
+  }
+
+  &__info-link {
+    color: #6B4185;
+    padding-left: 10px;
+  }
+}
