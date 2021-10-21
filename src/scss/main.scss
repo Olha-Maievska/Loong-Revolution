@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Philosopher:wght@700&display=swap');
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "./components/header";
+@import "./components/intro";
+@import "./components/news";
+@import "./components/sidebar";
+@import "./components/download";
+@import "./components/rules";
+
+
+@import "./components/footer";

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loong Revolution</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+</head>
+<body>
+    <div class="body__wrapper"></div>
+    @include('partials/header.html')
+
+    <section class="download">
+        <div class="container">
+            <div class="download__inner">
+                <div class="download__version">
+                    <div class="download__version-content">
+                        <div class="download__version-btns">
+                            <h2 class="title">Русская версия</h2>
+                            <button class="download__version-btn btn-purple">Скачать с сайта</button>
+                            <button class="download__version-btn btn-purple">Google drive</button>
+                        </div>
+
+                        <div class="download__version-btns">
+                            <h2 class="title">Английская версия</h2>
+                            <button class="download__version-btn btn-white">Скачать с сайта</button>
+                            <button class="download__version-btn btn-white">Google drive</button>
+                        </div>
+                    </div>
+                    <h2 class="title">Установка</h2>
+                    <div class="download__version-text">
+                        <p>Скачайте по ссылкам выше клиент нужной локализации (русская или английская).
+                        </p>
+                        <p>С помощью архиватора извлеките папку из архива
+                            <span>Примечание: если игра распакована на системный диск (обычно это С), то лаунчер придётся запускать от имени администратора.</span> 
+                        </p>
+                        <p>В распакованной папке найдите файл Launcher.exe и запустите его. Дождитесь обновления клиента и начинайте играть!</p>
+                        <p>В случае, если игра не запускается, отключите антивирус и внесите папку с игрой в исключения антивируса. После этого повторите 2 и 3 шаг.</p>
+                    </div>
+                </div>
+                <div class="download__params">
+                    <h4 class="download__params-title">Системные требования</h4>
+                    <div class="download__params-content">
+                        <div class="download__params-char">
+                            <div class="download__params-item">ОС:</div>
+                            <div class="download__params-item">Процессор:</div>
+                            <div class="download__params-item">Память:</div>
+                            <div class="download__params-item">Видео:</div>
+                            <div class="download__params-item">HDD:</div>
+                        </div>
+                        <div class="download__params-name">
+                            <div class="download__params-item">Windows XP и новее</div>
+                            <div class="download__params-item">Dual Core 2GHz</div>
+                            <div class="download__params-item">2 GB</div>
+                            <div class="download__params-item">256 MB</div>
+                            <div class="download__params-item">4GB свободного места</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    @include('partials/footer.html')
+</body>
+</html>

@@ -1,0 +1,102 @@
+//font-family: 'Nunito', sans-serif;
+//font-family: 'Philosopher', sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  line-height: 20px;
+  color: #490C3C;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0;
+  background: #fef0fe;
+  position: relative;
+}
+
+.body__wrapper {
+  background: url(../img/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2015px;
+  z-index: -1;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #490C3C;
+    margin-bottom: 30px;
+}
+
+.main__flex {
+  display: flex;
+}
+
+.btn-purple {
+  @include purple_btn;
+
+  &:hover {
+    @include purple_btn_hover;
+  }
+
+  &:active {
+    @include purple_btn_active;
+  }
+}
+
+.btn-white {
+  @include white_btn;
+
+  &:hover {
+    @include white_btn_hover;
+  }
+
+  &:active {
+    @include white_btn_active;
+  }
+}
+

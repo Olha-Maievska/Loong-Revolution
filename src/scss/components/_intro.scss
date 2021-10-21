@@ -1,0 +1,28 @@
+.intro {
+    background-image: url(../../img/intro-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 689px;
+    width: 100%;
+    position: relative;
+    margin-top: -80px;
+    
+  &__content {
+    position: absolute;
+    top: 40%;
+    margin-left: 40px;
+    transform: translateY(-50%);
+    }
+
+    &__title img {
+        width: 534px;
+        height: 121px;
+        margin-bottom: 60px;
+        display: block;
+    }
+
+    &__btn {
+    width: 218px;
+    }
+}

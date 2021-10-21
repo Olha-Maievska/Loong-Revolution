@@ -1,0 +1,58 @@
+.footer {
+  height: 438px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+  }
+
+  &__content-item {
+    margin-bottom: 15px;
+    color: #704770;
+    transition: all .5s;
+
+    &:hover {
+      color: #4749A3;
+    }
+
+    &:hover svg path {
+      fill: #4749A3;
+    }
+
+    &.social {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__content-link {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+
+    &.social {
+      padding-left: 15px;
+    }
+  }
+
+  &__copy {
+    background: rgba(245, 228, 243, 0.4);
+    padding: 25px 0;
+  }
+
+  &__copy_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copy-item {
+    color: #B698B5;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
