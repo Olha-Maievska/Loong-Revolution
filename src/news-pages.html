@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loong Revolution</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="body__wrapper"></div>
+    @include('partials/header.html')
+    <section class="news-page">
+        <div class="container">
+            <div class="news__links">
+                <a href="../news-pages.html" class="news__link active">новости</a>
+                <a href="../news-pages.html" class="news__link">Все</a>
+                <a href="../news-pages.html" class="news__link">Важное</a>
+                <a href="../news-pages.html" class="news__link">Акции</a>
+                <a href="../news-pages.html" class="news__link">События</a>
+            </div>
+            <div class="news-page__items">
+                <div class="news-page__item" href="#" style="background-image: url(../img/news-page.jpg);">
+                    <div class="news__item-wrapper"></div>
+                    <div class="news-page__item-content">
+                        <div class="news-page__item-data">
+                            22.02.2021
+                            <span>Важное</span>
+                        </div>
+                        <h4 class="news-page__item-title">Новые правила</h4>
+                        <p class="news-page__item-text">
+                            Это необходимо для того, чтобы мы могли иметь больший контроль над передачей, продажей и покупкой аккаунтов, а также любых игровых ценностей за неигровую валюту
+                        </p>
+                    </div>
+                </div>
+
+                <div class="news-page__item" href="#" style="background-image: url(../img/news-page.jpg);">
+                    <div class="news__item-wrapper"></div>
+                    <div class="news-page__item-content">
+                        <div class="news-page__item-data">
+                            22.02.2021
+                            <span>Важное</span>
+                        </div>
+                        <h4 class="news-page__item-title">Новые правила</h4>
+                        <p class="news-page__item-text">
+                            Это необходимо для того, чтобы мы могли иметь больший контроль над передачей, продажей и покупкой аккаунтов, а также любых игровых ценностей за неигровую валюту
+                        </p>
+                    </div>
+                </div>
+                <div class="news-page__item" href="#" style="background-image: url(../img/news-page.jpg);">
+                    <div class="news__item-wrapper"></div>
+                    <div class="news-page__item-content">
+                        <div class="news-page__item-data">
+                            22.02.2021
+                            <span>Важное</span>
+                        </div>
+                        <h4 class="news-page__item-title">Новые правила</h4>
+                        <p class="news-page__item-text">
+                            Это необходимо для того, чтобы мы могли иметь больший контроль над передачей, продажей и покупкой аккаунтов, а также любых игровых ценностей за неигровую валюту
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul class="pagination__list">
+                    <li class="pagination__arrow unactive">
+                        <a href="#">
+                            <img src="./img/arrow-left-white.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="pagination__item active">
+                        <a class="pagination__link" href="#">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">4</a>
+                    </li class="pagination__item">
+                    <li class="pagination__dots">
+                        <span>. . .</span>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">45</a>
+                    </li>
+                    <li class="pagination__arrow">
+                        <a class="pagination__link" href="#">
+                            <img src="./img/arrow-right-white.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    @include('partials/footer.html')
+</body>
+
+</html>
