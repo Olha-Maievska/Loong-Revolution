@@ -17,13 +17,12 @@
     @include btn;
     background: linear-gradient(95.27deg, #6B4185 0%, #4749A3 100%);
     color: #fff;
-    margin-right: 58px;
-  }
+}
 
 @mixin purple_btn_hover {
     box-shadow: 0px 10px 30px rgba(88, 69, 148, 0.75)
 }
-  
+
 @mixin purple_btn_active {
     background: linear-gradient(95.27deg, #37144D 0%, #1C1E6B 100%);
 }
@@ -43,4 +42,3 @@
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0px 16px 40px #C3A6C6;
 }
-
