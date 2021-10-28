@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loong Revolution</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="body__wrapper"></div>
+    @include('partials/header.html')
+
+    <section class="user-page">
+        <div class="container">
+            <h2 class="title">Личный кабинет</h2>
+            <nav class="user-page__menu">
+                <ul class="user-page__menu-list">
+                    <li class="user-page__menu-item">
+                        <a href="#" class="user-page__menu-link">
+                            Аккаунт
+                        </a>
+                    </li>
+                    <li class="user-page__menu-item">
+                        <a href="#" class="user-page__menu-link">
+                            Келион
+                        </a>
+                    </li>
+                    <li class="user-page__menu-item">
+                        <a href="#" class="user-page__menu-link">
+                            qwe
+                        </a>
+                    </li>
+                    <li class="user-page__menu-item">
+                        <a href="#" class="user-page__menu-link">
+                            123
+                        </a>
+                    </li>
+                    <li class="user-page__menu-item">
+                        <a href="#" class="user-page__menu-link">
+                            4444
+                        </a>
+                    </li>
+                    <li class="user-page__menu-item">
+                        <a href="#" class="user-page__menu-link">
+                            hfgsddf
+                        </a>
+                    </li>
+                    <li class="user-page__menu-item">
+                        <a href="#" class="user-page__menu-link">
+                            YY
+                        </a>
+                    </li>
+                    <li class="user-page__menu-item">
+                        <a href="#" class="user-page__menu-link">
+                            чекы
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-page__inner">
+                <div class="user-page__item user-page__item-history">
+                    <h4 class="user-page__item-title">
+                        История посещений
+                    </h4>
+                    <div class="user-page__item-content">
+                        <div class="user-page__item-data">
+                            <div class="user-page__item-subtitle">Время</div>
+                            <div class="user-page__item-text">16.08.21 06:16</div>
+                            <div class="user-page__item-text">16.08.21 05:09</div>
+                            <div class="user-page__item-text">14.08.21 19:58</div>
+                            <div class="user-page__item-text">13.08.21 17:39</div>
+                            <div class="user-page__item-text">12.08.21 18:50</div>
+                            <div class="user-page__item-text">12.08.21 07:18</div>
+                        </div>
+                        <div class="user-page__item-data">
+                            <div class="user-page__item-subtitle">IP</div>
+                            <div class="user-page__item-text right">178.155.6.209</div>
+                            <div class="user-page__item-text right">178.155.6.0</div>
+                            <div class="user-page__item-text right">178.155.6.0</div>
+                            <div class="user-page__item-text right">178.155.6.0</div>
+                            <div class="user-page__item-text right">178.155.6.0</div>
+                            <div class="user-page__item-text right">178.155.6.0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-page__item">
+                    <h4 class="user-page__item-title">
+                        Смена пароля
+                    </h4>
+                    <form class="user-page__form">
+                        <input class="user-page__input" type="password" id="" placeholder="Текущий пароль">
+                        <input class="user-page__input" type="password" placeholder="Новый пароль">
+                        <button class="user-page__btn btn-purple">Сменить</button>
+                    </form>
+                </div>
+
+                <div class="user-page__item">
+                    <h4 class="user-page__item-title">
+                        Смена email
+                    </h4>
+                    <form class="user-page__form">
+                        <input class="user-page__input" type="email" id="" placeholder="Текущий email">
+                        <input class="user-page__input" type="email" placeholder="Новый email">
+                        <button class="user-page__btn btn-purple">Сменить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @include('partials/footer.html')
+</body>
+
+</html>
