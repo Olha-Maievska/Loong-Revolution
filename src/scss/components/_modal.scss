@@ -1,0 +1,79 @@
+    .modal {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(86.29deg, rgba(253, 212, 241, 0.75) -7.65%, rgba(209, 191, 243, 0.75) 104.16%);
+        z-index: 11;
+        backdrop-filter: blur(15px);
+        &__wrapper {
+            width: 632px;
+            // height: 538px;
+            background: #fff;
+            padding: 50px;
+            margin: 190px auto 0;
+        }
+        &__title {
+            color: #fff;
+            position: relative;
+            text-align: center;
+            z-index: 17;
+            margin-bottom: 80px;
+            &::before {
+                content: url(../../img/modal-title.png);
+                position: absolute;
+                left: 50%;
+                top: 70%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+        }
+        &__form {
+            width: 532px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__input {
+            width: 251px;
+            background: #FFFFFF;
+            border: 1px solid #CBD0D7;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            padding: 16px 32px;
+            outline: transparent;
+            &::placeholder {
+                color: #CBD0D7;
+            }
+        }
+        &__btn {
+            margin-top: 20px;
+            width: 251px;
+            box-shadow: 0px 4px 12px rgba(195, 166, 198, 0.35)
+        }
+        &__checkbox-bg {
+            background: url(../../img/not-robot.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 251px;
+            height: 52px;
+        }
+        &__checkbox {
+            width: 23px;
+            height: 23px;
+            margin-left: 12px;
+            margin-top: 12px;
+            border-top-color: transparent;
+        }
+        &__link {
+            color: #CBD0D7;
+            width: 200px;
+            margin: 30px auto 0;
+        }
+    }
