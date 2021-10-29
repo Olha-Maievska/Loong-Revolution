@@ -1,0 +1,53 @@
+.person-page {
+    margin: 106px 0 100px;
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 30px;
+        grid-auto-flow: row;
+        grid-auto-rows: auto;
+    }
+    &__item {
+        width: 570px;
+        padding: 50px;
+        background: linear-gradient(86.29deg, rgba(253, 212, 241, 0.25) -7.65%, rgba(209, 191, 243, 0.25) 104.16%);
+        border-radius: 4px;
+        &:nth-child(1) {
+            // grid-column: span 1;
+            // grid-row: 2 / 1;
+            height: 497px;
+        }
+        &:nth-child(2) {
+            // grid-column: span 2;
+            // grid-row: 2 / 1;
+            height: 297px;
+        }
+        &:nth-child(3) {
+            // grid-column: span 1;
+            // grid-row: span 1;
+            height: 462px;
+        }
+        &:nth-child(4) {
+            // grid-column: 2 / 2;
+            // grid-row: 2 / 2;
+            margin-top: -200px;
+            height: 597px;
+        }
+    }
+    &__content {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        width: 45%;
+    }
+    &__list li {
+        margin-bottom: 30px;
+    }
+    &__btn {
+        margin-top: 20px;
+        width: 251px;
+    }
+}

@@ -15,7 +15,7 @@
     <div class="body__wrapper"></div>
     @include('partials/header.html')
 
-    <section class="user-page">
+    <section class="person-page">
         <div class="container">
             <h2 class="title">Личный кабинет</h2>
             <nav class="user-page__menu">
@@ -62,52 +62,92 @@
                     </li>
                 </ul>
             </nav>
-            <div class="user-page__inner">
-                <div class="user-page__item user-page__item-history">
-                    <h4 class="user-page__item-title">
-                        История посещений
-                    </h4>
-                    <div class="user-page__item-content">
-                        <div class="user-page__item-data">
-                            <div class="user-page__item-subtitle">Время</div>
-                            <div class="user-page__item-text">16.08.21 06:16</div>
-                            <div class="user-page__item-text">16.08.21 05:09</div>
-                            <div class="user-page__item-text">14.08.21 19:58</div>
-                            <div class="user-page__item-text">13.08.21 17:39</div>
-                            <div class="user-page__item-text">12.08.21 18:50</div>
-                            <div class="user-page__item-text">12.08.21 07:18</div>
-                        </div>
-                        <div class="user-page__item-data">
-                            <div class="user-page__item-subtitle">IP</div>
-                            <div class="user-page__item-text right">178.155.6.209</div>
-                            <div class="user-page__item-text right">178.155.6.0</div>
-                            <div class="user-page__item-text right">178.155.6.0</div>
-                            <div class="user-page__item-text right">178.155.6.0</div>
-                            <div class="user-page__item-text right">178.155.6.0</div>
-                            <div class="user-page__item-text right">178.155.6.0</div>
-                        </div>
+            <div class="person-page__inner">
+                <div class="person-page__item">
+                    <h2 class="title">Данные о персонаже</h2>
+                    <div class="person-page__content">
+                        <ul class="person-page__list">
+                            <li>Имя персонажа</li>
+                            <li>Уровень</li>
+                            <li>Класс</li>
+                            <li>Время в игре</li>
+                            <li>Дата создания</li>
+                            <li>Уровень экипировки </li>
+                            <li>Уровень силы</li>
+                        </ul>
+                        <ul class="person-page__list">
+                            <li>Келион</li>
+                            <li>90</li>
+                            <li>МП</li>
+                            <li>4664 ч.</li>
+                            <li>31.05.20</li>
+                            <li>17928</li>
+                            <li>26574</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="user-page__item">
-                    <h4 class="user-page__item-title">
-                        Смена пароля
-                    </h4>
-                    <form class="user-page__form">
-                        <input class="user-page__input" type="password" id="" placeholder="Текущий пароль">
-                        <input class="user-page__input" type="password" placeholder="Новый пароль">
-                        <button class="user-page__btn btn-purple">Сменить</button>
-                    </form>
+
+                <div class="person-page__item">
+                    <h2 class="title">Торговая лавка</h2>
+                    <div class="person-page__content">
+                        <ul class="person-page__list">
+                            <li>Уровень</li>
+                            <li>Опыт</li>
+                            <li>Получено опыта сегодня </li>
+                        </ul>
+                        <ul class="person-page__list">
+                            <li>2</li>
+                            <li>1353 / 8000</li>
+                            <li>439 / 1000</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="user-page__item">
-                    <h4 class="user-page__item-title">
-                        Смена email
-                    </h4>
-                    <form class="user-page__form">
-                        <input class="user-page__input" type="email" id="" placeholder="Текущий email">
-                        <input class="user-page__input" type="email" placeholder="Новый email">
-                        <button class="user-page__btn btn-purple">Сменить</button>
-                    </form>
+                <div class="person-page__item">
+                    <h2 class="title">Гильдия</h2>
+                    <div class="person-page__content">
+                        <ul class="person-page__list">
+                            <li>Звание</li>
+                            <li>Гильдейский взнос</li>
+                            <li>Гильдейские заслуги </li>
+                            <li>Дата вступления</li>
+                        </ul>
+                        <ul class="person-page__list">
+                            <li>Советник</li>
+                            <li>324 / 324</li>
+                            <li>506</li>
+                            <li>22.07.21</li>
+                        </ul>
+                    </div>
+                    <button class="person-page__btn btn-purple">Перейти к гильдии</button>
+                </div>
+
+                <div class="person-page__item">
+                    <h2 class="title">Титулы</h2>
+                    <div class="person-page__content">
+                        <ul class="person-page__list">
+                            <li>Чудовище</li>
+                            <li>Эталон усердия</li>
+                            <li>Искусный оценщик</li>
+                            <li>Виртуоз</li>
+                            <li>Радуга в сердце</li>
+                            <li>Искусный резчик</li>
+                            <li>Искусный гравер</li>
+                            <li>Искусный ювелир</li>
+                            <li>Искусный кузнец</li>
+                        </ul>
+                        <ul class="person-page__list">
+                            <li>3198 / 10000</li>
+                            <li>0 / 10000</li>
+                            <li>200 / 200</li>
+                            <li>114 / 1000</li>
+                            <li>19 / 100</li>
+                            <li>192 / 1000</li>
+                            <li>72 / 1000</li>
+                            <li>477 / 1000</li>
+                            <li>203 / 1000</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
