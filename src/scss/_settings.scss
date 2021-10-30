@@ -100,3 +100,22 @@ img {
         @include white_btn_active;
     }
 }
+
+.btn-prew {
+    display: block;
+    width: 46px;
+    font-family: 'Philosopher', sans-serif;
+    color: #4749A3;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    position: relative;
+    background: transparent;
+    border: none;
+    & object {
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        width: 7px;
+        height: 11px;
+    }
+}
