@@ -1,0 +1,42 @@
+    .timetable {
+        margin: 110px 0 100px;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+        &__list {
+            width: 120px;
+        }
+        &__item {
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 25px;
+            cursor: pointer;
+            &.active {
+                color: #4749A3;
+            }
+        }
+        &__table {
+            width: 870px;
+            background: linear-gradient(86.29deg, rgba(253, 212, 241, 0.25) -7.65%, rgba(209, 191, 243, 0.25) 104.16%);
+            border-radius: 4px;
+            padding: 50px 100px;
+        }
+        thead tr td {
+            color: #4749A3;
+            padding-bottom: 20px;
+        }
+        &__table-row td {
+            color: #BC9ABF;
+            padding: 30px 0 10px;
+            border-bottom: 1px solid rgba(188, 154, 191, 0.25);
+        }
+        &__table-row.active td {
+            color: #490C3C;
+        }
+        &__table-time,
+        &__table-name {
+            width: 198px;
+        }
+    }
