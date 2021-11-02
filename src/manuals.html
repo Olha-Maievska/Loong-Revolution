@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loong Revolution</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="body__wrapper"></div>
+    @include('partials/header.html')
+
+    <section class="manuals">
+        <div class="container">
+            <div class="title">Руководства</div>
+            <div class="manuals__inner">
+                <div class="manuals__menu">
+                    <div class="manuals__menu-wrapper">
+                        <a href="" class="manuals__menu-link active">Ежедневные задания
+                        <ul class="manuals__menu-list">
+                            <li class="manuals__menu-item">Кодекс чести</li>
+                            <li class="manuals__menu-item">Борьба со злом</li>
+                            <li class="manuals__menu-item active">Тьма вокруг</li>
+                            <li class="manuals__menu-item">Помощь в трудную минуту</li>
+                            <li class="manuals__menu-item">Снабжение</li>
+                            <li class="manuals__menu-item">На страже устоев</li>
+                            <li class="manuals__menu-item">Воля Владыки звёзд</li>
+                            <li class="manuals__menu-item">Древнее зеркало</li>
+                            <li class="manuals__menu-item">Праздничные хлопоты</li>
+                            <li class="manuals__menu-item">Происхождение кланов</li>
+                        </ul>
+                    </a>
+                    </div>
+                    <div class="manuals__menu-wrapper">
+                        <a href="" class="manuals__menu-link">Усиление персонажа</a>
+                    </div>
+                    <div class="manuals__menu-wrapper">
+                        <a href="" class="manuals__menu-link">Усадьба</a>
+                    </div>
+
+                </div>
+                <div class="manuals__box">
+                    <h2 class="title">Тьма вокруг</h2>
+                    <div class="manuals__box-item">
+                        <div class="manuals__item">
+                            NPC: <span>служитель школы доблести</span>
+                        </div>
+                        <div class="manuals__item">
+                            Количество заданий в день:
+                            <span>20</span>
+                        </div>
+                        <div class="manuals__item">
+                            Бонус от количества участников:
+                            <span>есть</span>
+                        </div>
+                        <div class="manuals__item">
+                            Необходимый уровень:
+                            <span>40 и выше</span>
+                        </div>
+                    </div>
+                    <h5 class="manuals__title">Описание</h5>
+                    <div class="manuals__content">
+                        <p class="manuals__text">
+                            Для выполнения задания вам необходимо заполучить <span>демонический камень,</span> убив одного из древних демонов. Для того, чтобы призвать демона, необходимо приобрести одну из трёх <span>реликвий</span> у <span>управляющего школой
+                        доблести.</span>
+                        </p>
+                        <p class="manuals__text">
+                            Приобретя реликвию, используйте её, чтобы определить местоположение демона и отправляйтесь по указанным координатам.
+                        </p>
+                        <div class="manuals__text-note">
+                            <p>Подсказка: поскольку время перезарядки реликвии достаточно велико (450 секунд), советуем выполнять задание в группе. Таким образом вы экономите и время, и печати огня, необходимые для покупки реликвии.</p>
+                            <p>Но учтите, что одновременно выполнять задание могут только игроки с небольшой разницей в уровнях.</p>
+                        </div>
+                        <p class="manuals__text">Прибыв на нужные координаты, используйте реликвию ещё раз, чтобы призвать демона. Чем выше будет качество реликвии, тем сильнее будет и демон.</p>
+                        <div class="manuals__text-note">
+                            <p>Если вы выполняете задание в группе, то для призыва демона необходимо, чтобы все участники группы, у которых есть такое же задание, были рядом с вами. После убийства монстра все игроки, находящиеся рядом, получат печать чести.</p>
+                        </div>
+                    </div>
+                    <h5 class="manuals__title">Награда</h5>
+                    <p class="manuals__text">Задание состоит из двух этапов по 10 заданий. За их выполнение вы будете получать опыт, золото, а также печати огня. Если при выполнении задания в инвентаре находилась печать чести, то ваша награда будет увеличена. В таблице ниже указано,
+                        сколько печатей огня вы получите при разных уровнях печати чести.</p>
+                    <table class="manuals__table">
+                        <thead class="manuals__table-head">
+                            <tr>
+                                <td>#</td>
+                                <td>Печати огня (1 этап)</td>
+                                <td>Печати огня (2 этап)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="manuals__table-name">Без печати</td>
+                                <td class="manuals__table-col1">3</td>
+                                <td class="manuals__table-col2">4</td>
+                            </tr>
+                            <tr>
+                                <td class="manuals__table-name">Печать чести I</td>
+                                <td class="manuals__table-col1">4</td>
+                                <td class="manuals__table-col2">5</td>
+                            </tr>
+                            <tr>
+                                <td class="manuals__table-name">Печать чести II</td>
+                                <td class="manuals__table-col1">4</td>
+                                <td class="manuals__table-col2">5</td>
+                            </tr>
+                            <tr>
+                                <td class="manuals__table-name">Печать чести III</td>
+                                <td class="manuals__table-col1">4</td>
+                                <td class="manuals__table-col2">5</td>
+                            </tr>
+                            <tr>
+                                <td class="manuals__table-name">Печать чести IV</td>
+                                <td class="manuals__table-col1">4</td>
+                                <td class="manuals__table-col2">5</td>
+                            </tr>
+                            <tr>
+                                <td class="manuals__table-name">Печать чести I</td>
+                                <td class="manuals__table-col1">5</td>
+                                <td class="manuals__table-col2">6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="manuals__text">Также за завершение этапа с небольшой вероятностью вы можете получить:</p>
+                    <ul class="manuals__list">
+                        <li>40-49 уровень: талисман мудреца (10 шт.)</li>
+                        <li>50-59 уровень: талисман мудреца (10 шт.) или талисман императора (8 шт.)</li>
+                        <li>60-79 уровень: талисман императора (8 шт.) или талисман предков (6 шт.)</li>
+                        <li>80 уровень и выше: талисман предков (6 шт.) или талисман жизни (4 шт.)</li>
+                        <li>предметы для заданий старейшины школы доблести</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    @include('partials/footer.html')
+</body>
+
+</html>

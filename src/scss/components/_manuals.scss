@@ -1,0 +1,122 @@
+.manuals {
+    margin: 110px 0 100px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    &__menu {
+        width: 220px;
+    }
+    &__menu-link {
+        font-size: 18px;
+        line-height: 25px;
+        cursor: pointer;
+        &.active {
+            color: #4749A3;
+        }
+    }
+    &__menu-wrapper {
+        margin-bottom: 30px;
+    }
+    &__menu-list {
+        margin-top: 15px;
+    }
+    &__menu-item {
+        margin-bottom: 15px;
+        color: #BC9ABF;
+        &.active {
+            color: #4749A3;
+        }
+    }
+    &__box {
+        width: 870px;
+    }
+    &__box-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 680px;
+    }
+    &__item {
+        margin-right: 50px;
+        margin-bottom: 30px;
+        & span {
+            color: #490C3C;
+        }
+        &:nth-child(1) {
+            color: #0BA360;
+        }
+        &:nth-child(2) {
+            color: #FC6060;
+        }
+        &:nth-child(3) {
+            color: #4481EB;
+        }
+        &:nth-child(4) {
+            color: #C163FF;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 15px;
+    }
+    &__content {
+        margin-bottom: 30px;
+    }
+    &__text {
+        margin-bottom: 15px;
+        & span {
+            color: #BC9ABF;
+        }
+    }
+    &__text-note {
+        width: 800px;
+        padding-left: 70px;
+        color: #BC9ABF;
+        position: relative;
+        & p {
+            margin-bottom: 15px;
+        }
+        &::before {
+            content: url(../../img/news-kavichuli.svg);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__table {
+        background: linear-gradient(86.29deg, rgba(253, 212, 241, 0.25) -7.65%, rgba(209, 191, 243, 0.25) 104.16%);
+        border-radius: 4px;
+        padding: 50px 100px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    &__table-head td {
+        color: #4749A3;
+        padding-bottom: 20px;
+        &:nth-child(2) {
+            text-align: center;
+        }
+        &:nth-child(3) {
+            text-align: center;
+        }
+    }
+    tbody tr td {
+        padding: 30px 0 10px;
+        border-bottom: 1px solid rgba(188, 154, 191, 0.25);
+        width: 33, 333%;
+    }
+    &__table-name {
+        width: 188px;
+    }
+    &__table-col1,
+    &__table-col2 {
+        width: 260px;
+        text-align: center;
+    }
+    &__list {
+        list-style: disc;
+        padding-left: 30px;
+    }
+}
