@@ -13,10 +13,10 @@
         line-height: 25px;
         color: #BC9ABF;
         &:hover {
-            color: $title;
+            color: #4749A3;
         }
         &:active {
-            color: $title;
+            color: #4749A3;
         }
     }
     &__inner {
@@ -35,7 +35,7 @@
         background: #fff;
     }
     &__item-title {
-        color: $title;
+        color: #4749A3;
         font-size: 24px;
         line-height: 33px;
         margin-bottom: 30px;
@@ -48,7 +48,7 @@
     &__item-subtitle {
         font-size: 18px;
         line-height: 25px;
-        color: $title;
+        color: #4749A3;
         margin-bottom: 30px;
         text-align: center;
     }
@@ -72,7 +72,7 @@
         padding: 16px 32px;
         font-size: 16px;
         line-height: 20px;
-        color: $default;
+        color: #490C3C;
         font-family: 'Nunito', sans-serif;
         font-weight: bold;
         border: none;

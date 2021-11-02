@@ -83,3 +83,57 @@
         text-align: center;
     }
 }
+
+.gildia-history {
+    margin: 110px 0 100px;
+    &__inner {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        width: 50px;
+    }
+    &__item {
+        color: #BC9ABF;
+        margin-bottom: 15px;
+        &.active {
+            color: #4749A3;
+        }
+    }
+    &__table {
+        width: 970px;
+        padding: 50px;
+        background: linear-gradient(86.29deg, rgba(253, 212, 241, 0.25) -7.65%, rgba(209, 191, 243, 0.25) 104.16%);
+        border-radius: 4px;
+    }
+    &__table-head td {
+        font-size: 18px;
+        line-height: 25px;
+        color: #4749A3;
+        padding-bottom: 20px;
+        &:last-child {
+            text-align: center;
+        }
+    }
+    &__table-row td {
+        padding: 30px 0 10px;
+        border-bottom: 1px solid rgba(188, 154, 191, 0.25);
+    }
+    &__nikname {
+        width: 200px;
+    }
+    &__act {
+        width: 155px;
+    }
+    &__subject {
+        width: 210px;
+    }
+    &__counts {
+        width: 110px;
+        text-align: center;
+    }
+    &__time {
+        text-align: center;
+    }
+}
