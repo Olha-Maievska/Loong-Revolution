@@ -1,0 +1,29 @@
+.bonus {
+    margin: 110px 0 100px;
+    &__inner {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 370px;
+        height: 195px;
+        background: linear-gradient(86.29deg, rgba(253, 212, 241, 0.25) -7.65%, rgba(209, 191, 243, 0.25) 104.16%);
+        border-radius: 4px;
+        padding: 50px;
+        margin-bottom: 30px;
+        color: #BC9ABF;
+        &:hover {
+            background: linear-gradient(86.29deg, #FDD4F1 -7.65%, #D1BFF3 104.16%);
+            color: #490C3C;
+        }
+        &.active {
+            background: linear-gradient(95.27deg, #6B4185 0%, #4749A3 100%);
+            color: #fff;
+        }
+    }
+    &__day {
+        margin-bottom: 10px;
+    }
+}
