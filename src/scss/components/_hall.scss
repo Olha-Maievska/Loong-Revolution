@@ -6,6 +6,9 @@
         border-radius: 4px;
         padding: 50px;
         margin-bottom: 50px;
+        & table {
+            width: 100%;
+        }
     }
     &__table-title {
         color: #4749A3;
@@ -16,6 +19,7 @@
         font-size: 18px;
         line-height: 25px;
         text-align: center;
+        padding-bottom: 20px;
     }
     &__table-row td {
         padding: 30px 0 10px;
