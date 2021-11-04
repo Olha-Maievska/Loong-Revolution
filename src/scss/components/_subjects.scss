@@ -4,6 +4,7 @@
         background: linear-gradient(86.29deg, rgba(253, 212, 241, 0.25) -7.65%, rgba(209, 191, 243, 0.25) 104.16%);
         border-radius: 4px;
         padding: 50px 10px 50px 40px;
+        margin-bottom: 50px;
     }
     &__title {
         color: #4749A3;
@@ -94,6 +95,24 @@
         margin-bottom: 15px;
         & span {
             color: #3CBA92;
+        }
+    }
+    &__level {
+        color: #490C3C;
+        margin-bottom: 15px;
+    }
+    &__box-intellect {
+        color: #04BEFE;
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    &__box-price {
+        display: flex;
+        align-items: center;
+        & object {
+            width: 16px;
+            height: 16px;
+            margin: 0 5px;
         }
     }
 }
