@@ -10,10 +10,10 @@
         backdrop-filter: blur(15px);
         &__wrapper {
             width: 632px;
-            // height: 538px;
             background: #fff;
             padding: 50px;
             margin: 190px auto 0;
+            position: relative;
         }
         &__title {
             color: #fff;
@@ -29,6 +29,14 @@
                 transform: translate(-50%, -50%);
                 z-index: -1;
             }
+        }
+        &__close {
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            font-size: 25px;
+            color: #4749A3;
+            cursor: pointer;
         }
         &__form {
             width: 532px;

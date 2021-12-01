@@ -1,1 +1,1 @@
-var mixer = mixitup('.media__items');
+// var mixer = mixitup('.media__items');

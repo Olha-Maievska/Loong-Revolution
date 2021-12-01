@@ -1,0 +1,29 @@
+/* Large desktops and laptops */
+
+@media (max-width: 1200px) {
+    .intro {
+        // width: 100%;
+        // height: auto;
+    }
+}
+
+
+/* Portrait tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {}
+
+// @media (max-width: 650) {}
+
+/* Landscape phones and smaller */
+
+@media (max-width: 480px) {}
