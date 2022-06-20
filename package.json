@@ -12,6 +12,17 @@
         "code": "editorconfig-checker"
     },
     "author": "",
+    "browserslist": [
+        "last 2 Chrome versions",
+        "last 2 Firefox versions"
+    ],
+    "babel": {
+        "presets": [
+          [
+            "@babel/preset-env"
+          ]
+        ]
+    },
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.15.0",

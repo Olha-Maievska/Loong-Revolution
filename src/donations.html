@@ -27,45 +27,58 @@
 
                     <div class="donations__form-content">
                         <form>
-                            <input type="text" class="donations__input" placeholder="Логин">
-                            <input type="number" class="donations__input" placeholder="Сумма пожертвования">
+                            <input type="text" class="donations__input" name="login" placeholder="Логин" required value>
+                            <input type="number" class="donations__input" id="donations__sum" name="sum" placeholder="Сумма пожертвования" required>
 
-                            <div class="donations__form-text">жемчуга: 0 (+5%)</div>
+                            <div class="donations__form-value">
+                                жемчуга:
+                                <span class="donations__sum">0</span>
+                                (+<span class="donations__percent">0</span>%)
+                            </div>
 
-                            <input type="radio" name="umoney" checked>
-                            <label for="umoney">Карта</label>
+                            <input id="radio-item" type="radio" name="card" checked>
+                            <label for="card">Карта</label>
 
-                            <input type="radio" name="map">
-                            <label for="map">ЮMoney</label>
+                            <input id="radio-item" type="radio" name="umoney">
+                            <label for="umoney">ЮMoney</label>
 
-                            <button class="donations__btn btn-purple">Пожертвовать</button>
+                            <button class="donations__btn btn-purple" type="submit">Пожертвовать</button>
                         </form>
-                        <div class="donations__counts">
-                            <div class="donations__counts-item active">
-                                <div class="donations__counts-arrow"></div>
-                                +0% от 50 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>
-                                +5% от 500 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>+10% от 1000 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>+15% от 2000 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>+20% от 3500 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>+25% от 5000 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>+30% от 7500 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>+35% от 10000 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>+40% от 12500 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>+45% от 15000 ₽</div>
-                            <div class="donations__counts-item">
-                                <div class="donations__counts-arrow"></div>+50% от 20000 ₽</div>
-                        </div>
+                        <ul class="donations__counts">
+                            <li class="donations__counts-item" data-value="50" data-percent="0">
+                                +0% от 50 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="500" data-percent="5">
+                                +5% от 500 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="1000" data-percent="10">
+                                +10% от 1000 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="2000" data-percent="15">
+                                +15% от 2000 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="3500" data-percent="20">
+                                +20% от 3500 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="5000" data-percent="25">
+                                +25% от 5000 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="7500" data-percent="30">
+                                +30% от 7500 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="10000" data-percent="35">
+                                +35% от 10000 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="12500" data-percent="40">
+                                +40% от 12500 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="15000" data-percent="45">
+                                +45% от 15000 ₽
+                            </li>
+                            <li class="donations__counts-item" data-value="20000" data-percent="50">
+                                +50% от 20000 ₽
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -81,46 +94,50 @@
 
                     <div class="donations__info-links">
 
-                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.3035 15.5C17.7305 15.5 18.1006 15.3583 18.4152 15.0785L13.0322 9.66958C12.9031 9.7625 12.7779 9.85286 12.6596 9.93879C12.2568 10.237 11.9298 10.4697 11.6788 10.6365C11.4277 10.8036 11.0938 10.974 10.6768 11.1479C10.2597 11.322 9.871 11.4088 9.51045 11.4088H9.48934C9.12876 11.4088 8.74009 11.3221 8.32294 11.1479C7.90578 10.974 7.57179 10.8036 7.32101 10.6365C7.06999 10.4697 6.74321 10.237 6.34016 9.93879C6.22785 9.85605 6.10328 9.76528 5.96861 9.66812L0.584572 15.0785C0.899138 15.3583 1.26945 15.5 1.6965 15.5H17.3035Z" fill="url(#paint0_linear_121:722)"/>
-                            <path d="M1.07099 6.26356C0.66818 5.99373 0.310978 5.68469 0 5.3366V13.5659L4.74456 8.79863C3.79538 8.1328 2.57241 7.28875 1.07099 6.26356Z" fill="url(#paint1_linear_121:722)"/>
-                            <path d="M17.9397 6.26356C16.4956 7.2457 15.2682 8.09121 14.2573 8.80054L19 13.5661V5.3366C18.6959 5.67769 18.3425 5.98652 17.9397 6.26356Z" fill="url(#paint2_linear_121:722)"/>
-                            <path d="M17.3034 0.5H1.69652C1.15204 0.5 0.733441 0.68474 0.440194 1.05384C0.146705 1.42311 0.000202123 1.88493 0.000202123 2.43877C0.000202123 2.88613 0.194619 3.37086 0.583281 3.89309C0.971943 4.41511 1.38551 4.82515 1.82378 5.1234C2.06404 5.29397 2.78859 5.80008 3.99741 6.64157C4.64997 7.09593 5.21746 7.49196 5.70512 7.83372C6.12079 8.12473 6.47927 8.37674 6.77524 8.58588C6.80922 8.60983 6.86265 8.64824 6.93358 8.69919C7.00998 8.75433 7.10668 8.82431 7.22596 8.91086C7.45567 9.07779 7.6465 9.21272 7.79849 9.3158C7.95027 9.41891 8.13416 9.53409 8.3499 9.66199C8.56546 9.78971 8.76878 9.88576 8.95961 9.94964C9.15047 10.0135 9.32716 10.0455 9.4897 10.0455H9.51081C9.67332 10.0455 9.85004 10.0135 10.0409 9.94964C10.2317 9.88576 10.4349 9.78992 10.6506 9.66199C10.8661 9.53409 11.0498 9.41867 11.2021 9.3158C11.3541 9.21272 11.5449 9.07782 11.7746 8.91086C11.8937 8.82431 11.9904 8.7543 12.0668 8.69936C12.1377 8.6482 12.1911 8.61004 12.2253 8.58588C12.4559 8.42468 12.8152 8.1737 13.2983 7.83666C14.1773 7.223 15.4718 6.31978 17.1874 5.1234C17.7033 4.7613 18.1344 4.32434 18.4808 3.81313C18.8266 3.30192 19 2.76569 19 2.2046C19 1.73582 18.8319 1.33469 18.4964 1.0006C18.1606 0.666925 17.7629 0.5 17.3034 0.5Z" fill="url(#paint3_linear_121:722)"/>
-                            <defs>
-                                <linearGradient id="paint0_linear_121:722" x1="3.79021e-07" y1="0.49999" x2="20.4733" y2="2.89248" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#6B4185"/>
-                                    <stop offset="1" stop-color="#4749A3"/>
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_121:722" x1="3.79021e-07" y1="0.49999" x2="20.4733" y2="2.89248" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#6B4185"/>
-                                    <stop offset="1" stop-color="#4749A3"/>
-                                </linearGradient>
-                                <linearGradient id="paint2_linear_121:722" x1="3.79021e-07" y1="0.49999" x2="20.4733" y2="2.89248" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#6B4185"/>
-                                    <stop offset="1" stop-color="#4749A3"/>
-                                </linearGradient>
-                                <linearGradient id="paint3_linear_121:722" x1="3.79021e-07" y1="0.49999" x2="20.4733" y2="2.89248" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#6B4185"/>
-                                    <stop offset="1" stop-color="#4749A3"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                        <a class="donations__info-link" href="mailto:loongre@mail.ru">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3035 15.5C17.7305 15.5 18.1006 15.3583 18.4152 15.0785L13.0322 9.66958C12.9031 9.7625 12.7779 9.85286 12.6596 9.93879C12.2568 10.237 11.9298 10.4697 11.6788 10.6365C11.4277 10.8036 11.0938 10.974 10.6768 11.1479C10.2597 11.322 9.871 11.4088 9.51045 11.4088H9.48934C9.12876 11.4088 8.74009 11.3221 8.32294 11.1479C7.90578 10.974 7.57179 10.8036 7.32101 10.6365C7.06999 10.4697 6.74321 10.237 6.34016 9.93879C6.22785 9.85605 6.10328 9.76528 5.96861 9.66812L0.584572 15.0785C0.899138 15.3583 1.26945 15.5 1.6965 15.5H17.3035Z" fill="url(#paint0_linear_121:722)"/>
+                                <path d="M1.07099 6.26356C0.66818 5.99373 0.310978 5.68469 0 5.3366V13.5659L4.74456 8.79863C3.79538 8.1328 2.57241 7.28875 1.07099 6.26356Z" fill="url(#paint1_linear_121:722)"/>
+                                <path d="M17.9397 6.26356C16.4956 7.2457 15.2682 8.09121 14.2573 8.80054L19 13.5661V5.3366C18.6959 5.67769 18.3425 5.98652 17.9397 6.26356Z" fill="url(#paint2_linear_121:722)"/>
+                                <path d="M17.3034 0.5H1.69652C1.15204 0.5 0.733441 0.68474 0.440194 1.05384C0.146705 1.42311 0.000202123 1.88493 0.000202123 2.43877C0.000202123 2.88613 0.194619 3.37086 0.583281 3.89309C0.971943 4.41511 1.38551 4.82515 1.82378 5.1234C2.06404 5.29397 2.78859 5.80008 3.99741 6.64157C4.64997 7.09593 5.21746 7.49196 5.70512 7.83372C6.12079 8.12473 6.47927 8.37674 6.77524 8.58588C6.80922 8.60983 6.86265 8.64824 6.93358 8.69919C7.00998 8.75433 7.10668 8.82431 7.22596 8.91086C7.45567 9.07779 7.6465 9.21272 7.79849 9.3158C7.95027 9.41891 8.13416 9.53409 8.3499 9.66199C8.56546 9.78971 8.76878 9.88576 8.95961 9.94964C9.15047 10.0135 9.32716 10.0455 9.4897 10.0455H9.51081C9.67332 10.0455 9.85004 10.0135 10.0409 9.94964C10.2317 9.88576 10.4349 9.78992 10.6506 9.66199C10.8661 9.53409 11.0498 9.41867 11.2021 9.3158C11.3541 9.21272 11.5449 9.07782 11.7746 8.91086C11.8937 8.82431 11.9904 8.7543 12.0668 8.69936C12.1377 8.6482 12.1911 8.61004 12.2253 8.58588C12.4559 8.42468 12.8152 8.1737 13.2983 7.83666C14.1773 7.223 15.4718 6.31978 17.1874 5.1234C17.7033 4.7613 18.1344 4.32434 18.4808 3.81313C18.8266 3.30192 19 2.76569 19 2.2046C19 1.73582 18.8319 1.33469 18.4964 1.0006C18.1606 0.666925 17.7629 0.5 17.3034 0.5Z" fill="url(#paint3_linear_121:722)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_121:722" x1="3.79021e-07" y1="0.49999" x2="20.4733" y2="2.89248" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6B4185"/>
+                                        <stop offset="1" stop-color="#4749A3"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_121:722" x1="3.79021e-07" y1="0.49999" x2="20.4733" y2="2.89248" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6B4185"/>
+                                        <stop offset="1" stop-color="#4749A3"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_121:722" x1="3.79021e-07" y1="0.49999" x2="20.4733" y2="2.89248" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6B4185"/>
+                                        <stop offset="1" stop-color="#4749A3"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint3_linear_121:722" x1="3.79021e-07" y1="0.49999" x2="20.4733" y2="2.89248" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6B4185"/>
+                                        <stop offset="1" stop-color="#4749A3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
 
-                        <a href="#" class="donations__info-link">Написать на почту</a>
+                            <span>Написать на почту</span>
+                        </a>
 
                         <span>или</span>
 
-                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7208 15.4372H14.2749C14.2749 15.4372 14.7443 15.3851 14.984 15.1238C15.2046 14.8839 15.1976 14.4335 15.1976 14.4335C15.1976 14.4335 15.1672 12.3246 16.135 12.014C17.0891 11.7081 18.3143 14.0522 19.6128 14.9535C20.5948 15.6357 21.341 15.4861 21.341 15.4861L24.8131 15.4372C24.8131 15.4372 26.6295 15.324 25.7682 13.8798C25.6976 13.7617 25.2667 12.8115 23.1866 10.8589C21.0095 8.81539 21.3011 9.14592 23.9236 5.61103C25.5208 3.45826 26.1593 2.14396 25.9599 1.58105C25.7697 1.0449 24.595 1.18661 24.595 1.18661L20.6855 1.21124C20.6855 1.21124 20.3957 1.17126 20.1808 1.3012C19.9707 1.42863 19.8356 1.72561 19.8356 1.72561C19.8356 1.72561 19.2168 3.39151 18.3916 4.80825C16.6507 7.79772 15.9547 7.95549 15.6702 7.76988C15.0084 7.33725 15.1736 6.03188 15.1736 5.10452C15.1736 2.2075 15.6081 0.999572 14.3275 0.686883C13.9025 0.58301 13.5898 0.514475 12.503 0.503409C11.1081 0.488774 9.92739 0.507692 9.25887 0.838944C8.81413 1.05918 8.47104 1.54999 8.68 1.57819C8.93837 1.61317 9.52359 1.73775 9.83385 2.16502C10.2345 2.71615 10.2204 3.95406 10.2204 3.95406C10.2204 3.95406 10.4505 7.36438 9.68278 7.78808C9.1558 8.07864 8.43292 7.48539 6.88092 4.77327C6.08568 3.38401 5.48529 1.8484 5.48529 1.8484C5.48529 1.8484 5.36951 1.56141 5.16303 1.40792C4.91242 1.22195 4.56228 1.1627 4.56228 1.1627L0.847288 1.18733C0.847288 1.18733 0.289599 1.20303 0.0848775 1.44826C-0.097254 1.66636 0.0704057 2.11754 0.0704057 2.11754C0.0704057 2.11754 2.97886 8.99886 6.27205 12.4666C9.29169 15.646 12.7208 15.4372 12.7208 15.4372Z" fill="url(#paint0_linear_121:697)"/>
-                            <defs>
-                                <linearGradient id="paint0_linear_121:697" x1="5.1866e-07" y1="0.49999" x2="27.6906" y2="4.92805" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#6B4185"/>
-                                    <stop offset="1" stop-color="#4749A3"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                        <a class="donations__info-link" href="https://vk.com" target="_blank">
+                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7208 15.4372H14.2749C14.2749 15.4372 14.7443 15.3851 14.984 15.1238C15.2046 14.8839 15.1976 14.4335 15.1976 14.4335C15.1976 14.4335 15.1672 12.3246 16.135 12.014C17.0891 11.7081 18.3143 14.0522 19.6128 14.9535C20.5948 15.6357 21.341 15.4861 21.341 15.4861L24.8131 15.4372C24.8131 15.4372 26.6295 15.324 25.7682 13.8798C25.6976 13.7617 25.2667 12.8115 23.1866 10.8589C21.0095 8.81539 21.3011 9.14592 23.9236 5.61103C25.5208 3.45826 26.1593 2.14396 25.9599 1.58105C25.7697 1.0449 24.595 1.18661 24.595 1.18661L20.6855 1.21124C20.6855 1.21124 20.3957 1.17126 20.1808 1.3012C19.9707 1.42863 19.8356 1.72561 19.8356 1.72561C19.8356 1.72561 19.2168 3.39151 18.3916 4.80825C16.6507 7.79772 15.9547 7.95549 15.6702 7.76988C15.0084 7.33725 15.1736 6.03188 15.1736 5.10452C15.1736 2.2075 15.6081 0.999572 14.3275 0.686883C13.9025 0.58301 13.5898 0.514475 12.503 0.503409C11.1081 0.488774 9.92739 0.507692 9.25887 0.838944C8.81413 1.05918 8.47104 1.54999 8.68 1.57819C8.93837 1.61317 9.52359 1.73775 9.83385 2.16502C10.2345 2.71615 10.2204 3.95406 10.2204 3.95406C10.2204 3.95406 10.4505 7.36438 9.68278 7.78808C9.1558 8.07864 8.43292 7.48539 6.88092 4.77327C6.08568 3.38401 5.48529 1.8484 5.48529 1.8484C5.48529 1.8484 5.36951 1.56141 5.16303 1.40792C4.91242 1.22195 4.56228 1.1627 4.56228 1.1627L0.847288 1.18733C0.847288 1.18733 0.289599 1.20303 0.0848775 1.44826C-0.097254 1.66636 0.0704057 2.11754 0.0704057 2.11754C0.0704057 2.11754 2.97886 8.99886 6.27205 12.4666C9.29169 15.646 12.7208 15.4372 12.7208 15.4372Z" fill="url(#paint0_linear_121:697)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_121:697" x1="5.1866e-07" y1="0.49999" x2="27.6906" y2="4.92805" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#6B4185"/>
+                                        <stop offset="1" stop-color="#4749A3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
 
-                        <a href="#" class="donations__info-link">ВКонтакте</a>
+                            <span>ВКонтакте</span>
+                        </a>
                     </div>
                 </div>
             </div>

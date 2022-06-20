@@ -9,32 +9,33 @@
 
   &__content-item {
     margin-bottom: 15px;
-    color: #704770;
-    transition: all .5s;
-
-    &:hover {
-      color: #4749A3;
-    }
-
-    &:hover svg path {
-      fill: #4749A3;
-    }
-
-    &.social {
-      display: flex;
-      align-items: center;
-    }
   }
-
+  
   &__content-link {
+    color: #704770;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.03em;
-
+    transition: all .3s ease-in;
+    &:hover {
+      color: #4749A3;
+      text-shadow: 0 2px 3px rgba(116, 63, 109, 0.4);
+    }
+    & svg path {
+      transition: all .3s ease-in;
+    }
+    &:hover svg path {
+      fill: #4749A3;
+      box-shadow: 0 2px 3px rgba(116, 63, 109, 0.4);
+    }
     &.social {
+      display: flex;
+      align-items: center;
+    }
+    & span {
       padding-left: 15px;
     }
   }

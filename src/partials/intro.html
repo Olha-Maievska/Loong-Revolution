@@ -5,42 +5,9 @@
                 <img src="../img/header-title.png" alt="">
             </div>
             <div class="intro__buttons">
-                <button class="intro__btn btn-purple" id="openModalReg">Регистрация</button>
-                <button class="intro__btn btn-white" id="openModalAuth">Авторизация</button>
+                <button class="intro__btn btn-purple" data-btn="registration">Регистрация</button>
+                <button class="intro__btn btn-white" data-btn="authorization">Авторизация</button>
             </div>
         </div>
     </div>
 </section>
-
-<div class="modal" id="modal-registration">
-    <div class="modal__wrapper">
-        <h2 class="modal__title title">регистрация</h2>
-        <div class="modal__close" id="modalClose">&#10006</div>
-        <form class="modal__form">
-            <input class="modal__input" type="text" placeholder="Введите логин">
-            <input class="modal__input" type="email" placeholder="Введите email">
-            <input class="modal__input" type="password" placeholder="Введите пароль">
-            <input class="modal__input" type="password" placeholder="Подтвердите пароль">
-            <input class="modal__input" type="text" placeholder="Реферальный код">
-            <div class="modal__checkbox-bg">
-                <input class="modal__checkbox" name="checkbox" type="checkbox">
-            </div>
-            <button class="modal__btn btn-white">Войти</button>
-            <button class="modal__btn btn-purple">Зарегестрироваться</button>
-        </form>
-    </div>
-</div>
-
-<div class="modal" id="modal-auth">
-    <div class="modal__wrapper">
-        <h2 class="modal__title title">Авторизация</h2>
-        <div class="modal__close" id="modalClose">&#10006</div>
-        <form class="modal__form">
-            <input class="modal__input" type="text" placeholder="Введите логин">
-            <input class="modal__input" type="email" placeholder="Введите email">
-            <button class="modal__btn btn-white">Зарегестрироваться</button>
-            <button class="modal__btn btn-purple">Войти</button>
-            <a class="modal__link" href="#">Восстановить аккаунт</a>
-        </form>
-    </div>
-</div>

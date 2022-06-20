@@ -7,7 +7,7 @@
         margin-bottom: 50px;
     }
     &__players {
-        background-image: url(../../img/sidabar-fone.jpg);
+        background-image: url(../../img/sidebar/sidabar-fone.jpg);
         height: 112px;
         width: 100%;
         background-repeat: no-repeat;
@@ -40,7 +40,7 @@
         justify-content: space-between;
     }
     &__characters-link {
-        background-image: url(../../img/sidebar-person.jpg);
+        background-image: url(../../img/sidebar/sidebar-person.jpg);
         width: 175px;
         height: 74px;
         background-repeat: no-repeat;
@@ -89,7 +89,7 @@
         position: fixed;
         right: -420px;
         top: 0;
-        padding: 15px;
+        padding: 14px;
         transition: all .5s ease-in-out;
     }
     &__characters-items.characters__classes {
@@ -117,10 +117,6 @@
             background: linear-gradient(95.27deg, #6B4185 0%, #4749A3 100%);
             color: #fff;
         }
-        &:active .sidebar__menu-link {
-            background: linear-gradient(95.27deg, #37144D 0%, #1C1E6B 100%);
-            color: #fff;
-        }
         &:hover .sidebar__menu-img {
             background: #fff;
             .sidebar__menu-img svg rect {
@@ -130,9 +126,12 @@
         &:hover .sidebar__menu-img svg path {
             fill: #4749A3;
         }
-        &:active .sidebar__menu-img svg path {
-            fill: #37144D;
-        }
+    }
+    &__menu-img svg path {
+        transition: .25s all ease-in-out;
+    }
+    &__menu-img svg rect {
+        transition: .25s all ease-in-out;
     }
     &__menu-link {
         font-family: 'Philosopher', sans-serif;
@@ -149,7 +148,7 @@
         border-radius: 4px;
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12% 100%);
         margin-left: -30px;
-        transition: all .5s;
+        transition: .25s all ease-in-out;
     }
     &__menu-img {
         background: linear-gradient(95.27deg, #6B4185 0%, #4749A3 100%);
@@ -159,7 +158,6 @@
         padding-left: 26px;
         align-items: center;
         clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
-        transition: all .5s;
     }
     &__vidget {
         background-color: rgb(185, 136, 136);
