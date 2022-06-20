@@ -75,14 +75,12 @@ const scripts = () => {
         .pipe(gulpif(isProd, uglify().on("error", notify.onError())))
         .pipe(dest('./app/js/'))
     return src([
-            './src/js/global.js',
-            'node_modules/mixitup/dist/mixitup.min.js',
             './src/js/components/**.js',
             './src/js/main.js'
         ])
         .pipe(gulpif(!isProd, sourcemaps.init()))
         .pipe(babel({
-            presets: ['@babel/env']
+            presets: ['@babel/preset-env']
         }))
         .pipe(concat('main.js'))
         .pipe(gulpif(isProd, uglify().on("error", notify.onError())))
@@ -111,9 +109,11 @@ const images = () => {
             './src/img/**.png',
             './src/img/**.jpeg',
             './src/img/*.svg',
+            './src/img/*.webp',
             './src/img/**/*.jpg',
             './src/img/**/*.png',
-            './src/img/**/*.jpeg'
+            './src/img/**/*.jpeg',
+            './src/img/**/*.webp'
         ])
         .pipe(gulpif(isProd, image()))
         .pipe(dest('./app/img'))
@@ -132,13 +132,16 @@ const htmlInclude = () => {
 const watchFiles = () => {
     browserSync.init({
         server: {
-            baseDir: "./app"
-        },
+            baseDir: "./app",
+            serveStaticOptions: {
+                extensions: ["html"]
+            }
+        }
     });
 
     watch('./src/scss/**/*.scss', styles);
     watch('./src/js/**/*.js', scripts);
-    watch('./src/partials/*.html', htmlInclude);
+    watch('./src/**/*.html', htmlInclude);
     watch('./src/*.html', htmlInclude);
     watch('./src/resources/**', resources);
     watch('./src/img/*.{jpg,jpeg,png,svg}', images);

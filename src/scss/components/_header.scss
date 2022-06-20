@@ -1,63 +1,41 @@
 .header {
-  height: 80px;
-  position: relative;
-
-  &__inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 30px;
-  }
+    height: 80px;
+    position: relative;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+    &__lang {
+        font-family: 'Philosopher', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        z-index: 8;
+    }
 }
 
 .menu {
-  &__item {
-      display: inline-block;
-      transition: all .5s ease-in-out;
-
-      & + .menu__item {
-          padding-left: 60px;
-      }
-
-      &:hover {
-          color: #4749A3;
-      }
-
-      &:active {
-          color: #fff;
-
-          .menu__item__link::after {
-              opacity: 1;
-          }
-      }
-  }
-
-  &__item__link {
-      font-family: 'Philosopher', sans-serif;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 20px;
-      letter-spacing: 0.03em;
-      z-index: 5;
-      position: relative;
-
-      &::after {
-          opacity: 0;
-          content: url(../../img/menu-hover.png);
-          width: 114px;
-          height: 84px;
-          position: absolute;
-          left: 50%;
-          top: 55%;
-          transform: translate(-50%, -50%);
-          z-index: -1;
-          transition: all .5s ease-in-out;
-      }
-  }
-
-  &__item__link-big::after {
-      content: url(../../img/menu_hover_big.png);
-      left: 28%;
-      top: 65%;
-  }
+    &__item {
+        display: inline-block;
+        & + .menu__item {
+            padding-left: 60px;
+        }
+    }
+    &__item__link {
+        display: inline-block;
+        font-family: 'Philosopher', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        z-index: 5;
+        position: relative;
+        transition: all .5s ease-in-out;
+        &:hover {
+            color: #4749A3;
+            text-shadow: 0 2px 3px rgba(116, 63, 109, 0.4);
+        }
+    }
 }

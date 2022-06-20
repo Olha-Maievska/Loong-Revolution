@@ -17,15 +17,14 @@
     <section class="news-page">
         <div class="container">
             <div class="news__links">
-                <a href="../news-pages.html" class="news__link active">новости</a>
+                <a href="../news-pages.html" class="news__link-active">новости</a>
                 <a href="../news-pages.html" class="news__link">Все</a>
                 <a href="../news-pages.html" class="news__link">Важное</a>
                 <a href="../news-pages.html" class="news__link">Акции</a>
                 <a href="../news-pages.html" class="news__link">События</a>
             </div>
             <div class="news-page__items">
-                <div class="news-page__item" href="#" style="background-image: url(../img/news-page.jpg);">
-                    <div class="news__item-wrapper"></div>
+                <a class="news-page__item" href="#" style="background-image: url(../img/news/news1.webp);">
                     <div class="news-page__item-content">
                         <div class="news-page__item-data">
                             22.02.2021
@@ -36,34 +35,32 @@
                             Это необходимо для того, чтобы мы могли иметь больший контроль над передачей, продажей и покупкой аккаунтов, а также любых игровых ценностей за неигровую валюту
                         </p>
                     </div>
-                </div>
+                </a>
 
-                <div class="news-page__item" href="#" style="background-image: url(../img/news-page.jpg);">
-                    <div class="news__item-wrapper"></div>
+                <a class="news-page__item" href="#" style="background-image: url(../img/news/news2.webp);">
                     <div class="news-page__item-content">
                         <div class="news-page__item-data">
-                            22.02.2021
-                            <span>Важное</span>
+                            10.09.2021
+                            <span>Акции</span>
                         </div>
-                        <h4 class="news-page__item-title">Новые правила</h4>
+                        <h4 class="news-page__item-title">Бонусы при пожертвованиях</h4>
                         <p class="news-page__item-text">
-                            Это необходимо для того, чтобы мы могли иметь больший контроль над передачей, продажей и покупкой аккаунтов, а также любых игровых ценностей за неигровую валюту
+                            До 4 августа включительно при пожертвовании на любую сумму вы получите на 50% больше жемчуга!
                         </p>
                     </div>
-                </div>
-                <div class="news-page__item" href="#" style="background-image: url(../img/news-page.jpg);">
-                    <div class="news__item-wrapper"></div>
+                </a>
+                <a class="news-page__item" href="#" style="background-image: url(../img/news/news3.webp);">
                     <div class="news-page__item-content">
                         <div class="news-page__item-data">
-                            22.02.2021
-                            <span>Важное</span>
+                            20.07.2021
+                            <span>Обновления</span>
                         </div>
-                        <h4 class="news-page__item-title">Новые правила</h4>
+                        <h4 class="news-page__item-title">Обновление 5.0.4</h4>
                         <p class="news-page__item-text">
-                            Это необходимо для того, чтобы мы могли иметь больший контроль над передачей, продажей и покупкой аккаунтов, а также любых игровых ценностей за неигровую валюту
+                            Исправлена ошибка, из-за которой невозможно было создать некоторые виды снаряжения в ремесле или у NPC..
                         </p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="pagination">
                 <ul class="pagination__list">
@@ -101,6 +98,9 @@
     </section>
 
     @include('partials/footer.html')
+
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

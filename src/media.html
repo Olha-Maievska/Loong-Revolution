@@ -19,16 +19,16 @@
         <div class="container">
             <div class="media__inner">
                 <div class="media__btns">
-                    <button class="media__btn active" type="button" data-filter=".category-man">Мужские костюмы</button>
-                    <button class="media__btn" type="button" data-filter=".category-woman">Женские костюмы</button>
-                    <button class="media__btn" type="button" data-filter=".category-pets">Питомцы</button>
-                    <button class="media__btn" type="button" data-filter=".category-titles">Титулы</button>
+                    <button class="media__btn active" type="button">Мужские костюмы</button>
+                    <button class="media__btn" type="button">Женские костюмы</button>
+                    <button class="media__btn" type="button">Питомцы</button>
+                    <button class="media__btn" type="button">Титулы</button>
                 </div>
 
                 <div class="media__items">
-                    <div class="media__item mix category-man" data-order="1">
+                    <div class="media__item">
                         <div class="media__item-grid">
-                            <div class="media__box-content active">
+                            <div class="media__box-content">
                                 <img src="./img/man/man1.png" alt="" class="media__box-img">
                                 <h5 class="media__box-title">Одежда дракона</h5>
                             </div>
@@ -111,9 +111,9 @@
                         </div>
                     </div>
 
-                    <div class="media__item mix category-woman" data-order="2">
+                    <div class="media__item">
                         <div class="media__item-grid">
-                            <div class="media__box-content">
+                            <div class="media__box-content active">
                                 <img src="./img/woman/woman1.png" alt="" class="media__box-img">
                                 <h5 class="media__box-title">Наряд дракона</h5>
                             </div>
@@ -196,10 +196,10 @@
                         </div>
                     </div>
 
-                    <div class="media__item mix category-pets" data-order="3">
+                    <div class="media__item">
                         <h5 class="title">Ездовые питомцы</h5>
                         <div class="media__item-grid">
-                            <div class="media__box-content">
+                            <div class="media__box-content active">
                                 <img src="./img/mounts/mount1.png" alt="" class="media__box-img">
                                 <h5 class="media__box-title">Наряд дракона</h5>
                             </div>
@@ -285,12 +285,10 @@
                                 <h5 class="media__box-title">Костюм востока</h5>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="media__item mix category-pets" data-order="3">
                         <h5 class="media__title-helper title">Питомцы-помощники</h5>
                         <div class="media__item-grid">
-                            <div class="media__box-content">
+                            <div class="media__box-content active">
                                 <img src="./img/helpers/helper1.png" alt="" class="media__box-img">
                                 <h5 class="media__box-title">Наряд дракона</h5>
                             </div>
@@ -413,9 +411,9 @@
                         </div>
                     </div>
 
-                    <div class="media__item mix category-titles" data-order="4">
+                    <div class="media__item">
                         <div class="media__item-grid titles">
-                            <div class="media__box-titles">
+                            <div class="media__box-titles active">
                                 <img src="./img/titles/titles1.png" alt="" class="media__box-img">
                             </div>
                             <div class="media__box-titles">
@@ -562,7 +560,6 @@
 
     @include('partials/footer.html')
 
-    <script src="../node_modules/mixitup/dist/mixitup.min.js"></script>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
 </body>

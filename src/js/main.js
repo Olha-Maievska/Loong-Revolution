@@ -1,1 +1,0 @@
-var mixer = mixitup('.media__items');

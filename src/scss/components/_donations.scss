@@ -19,11 +19,11 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    // align-items: t;
   }
 
   &__form-content form {
     width: 251px;
+    margin-right: 50px;
   }
 
   &__form-content form label {
@@ -57,9 +57,10 @@
     }
   }
 
-  &__form-text {
+  &__form-value {
     color: #BC9ABF;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   &__btn {
@@ -73,31 +74,31 @@
   }
 
   &__counts-item {
+    display: inline-block;
     color: #BC9ABF;
-    margin-bottom: 5px;
-    padding-left: 30px;
+    margin-bottom: 10px;
+    padding-left: 20px;
     position: relative;
     cursor: pointer;
+
+    &::before {
+      content: url(../../img/arrowLeft.png);
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 7px;
+      height: 11px;
+      opacity: 0;
+    }
 
     &.active {
       color: #6B4185;
     }
 
-    &.active .donations__counts-arrow {
+    &.active::before {
       opacity: 1;
     }
   }
-
-  &__counts-arrow {
-    content: url(../../img/arrow-left.svg);
-    position: absolute;
-    left: 0;
-    top: 4px;
-    width: 7px;
-    height: 11px;
-    opacity: 0;
-  }
-
   &__info {
     width: 575px;
     height: 491px;
@@ -115,7 +116,6 @@
 
   &__info-links {
     display: flex;
-    align-items: center;
 
     & span {
       padding: 0 15px;
@@ -125,5 +125,7 @@
   &__info-link {
     color: #6B4185;
     padding-left: 10px;
+    display: flex;
+    align-items: center;
   }
 }
